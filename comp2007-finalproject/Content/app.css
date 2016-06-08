@@ -1,0 +1,10 @@
+#logo {
+    width:50px;
+
+}
+body{
+    background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    margin:10px 15px 10px 15px;
+    border:inset white;
+}
