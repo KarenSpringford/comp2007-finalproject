@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="comp2007_finalproject.Navbar" %>
-<nav class="navbar navbar-default" role="navigation">
+<nav id="navbar" class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -14,8 +14,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Default.aspx"><i class="fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                <li><a href="Contact.aspx"><i class="fa-phone fa-lg" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -1,10 +1,22 @@
 #logo {
-    width:50px;
-
+    width:40px;
+height:35px;
+align-content:center;
+}
+#navbar{
+    background: linear-gradient(to right,rgb(204, 230, 255),rgb(255, 88, 78));
+}
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
     background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
-    font-family: Arial, Helvetica, sans-serif;
-    margin:10px 15px 10px 15px;
-    border:inset white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
+
+#blah{
+    position:static; 
+    align-content:center; 
+    width:60%; 
 }
