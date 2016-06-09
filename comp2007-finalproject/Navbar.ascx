@@ -17,7 +17,7 @@
                 <li><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
                 <li><a href="Schedule.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Schedule</a></li>
                 <li><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
-                <li><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats Us</a></li>
+                <li><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats</a></li>
                 <li><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
             </ul>
         </div>

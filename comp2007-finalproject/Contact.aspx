@@ -4,7 +4,7 @@
     <div class="container">
         <div class ="row">
             <div class="col-md-offset-3 col-md-6">
-                <h1>Contact Us</h1>
+                <h1><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</h1>
             </div>   
         </div>
     </div>

@@ -19,4 +19,9 @@ body{
     align-content:center; 
     width:60%; 
 }
+#schedule{
+	position:static;
+align-content:center;
+width:60%;
+}
 

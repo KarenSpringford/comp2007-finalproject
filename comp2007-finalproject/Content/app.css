@@ -1,22 +1,30 @@
 #logo {
-    width:40px;
-height:35px;
-align-content:center;
-}
-#navbar{
-    background: linear-gradient(to right,rgb(204, 230, 255),rgb(255, 88, 78));
-}
-h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body{
-    background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    width: 40px;
+    height: 35px;
+    align-content: center;
 }
 
-#blah{
-    position:static; 
-    align-content:center; 
-    width:60%; 
+#navbar {
+    background: linear-gradient(to right,rgb(204, 230, 255),rgb(255, 88, 78));
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#blah {
+    position: static;
+    align-content: center;
+    width: 60%;
+}
+
+#schedule {
+    position: static;
+    align-content: center;
+    width: 60%;
 }
