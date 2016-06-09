@@ -66,7 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\facebook.png" />
+    <Content Include="Assets\google.png" />
     <Content Include="Assets\logo-smaller.png" />
+    <Content Include="Assets\twitter.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -78,6 +81,7 @@
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Footer.ascx" />
     <Content Include="Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Public.Master" />
@@ -127,6 +131,12 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>

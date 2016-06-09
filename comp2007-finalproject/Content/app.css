@@ -28,3 +28,14 @@ body {
     align-content: center;
     width: 60%;
 }
+#address{
+    position:center;
+    align-content:center;
+    border:1px solid white;
+}
+#footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;
+}
