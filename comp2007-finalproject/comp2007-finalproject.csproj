@@ -81,8 +81,8 @@
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Footer.ascx" />
-    <Content Include="Navbar.ascx" />
+    <Content Include="UserControl\Footer.ascx" />
+    <Content Include="UserControl\Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Public.Master" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -132,16 +132,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Footer.ascx.cs">
+    <Compile Include="UserControl\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Footer.ascx.designer.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Footer.ascx.designer.cs">
-      <DependentUpon>Footer.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Navbar.ascx.cs">
+    <Compile Include="UserControl\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Navbar.ascx.designer.cs">
+    <Compile Include="UserControl\Navbar.ascx.designer.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

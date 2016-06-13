@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="comp2007_finalproject.Public" %>
-<%@ Register Src="~/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
-<%@ Register Src="~/Footer.ascx" TagName="Footer" TagPrefix="bs4" %>
+<%@ Register Src="~/UserControl/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+<%@ Register Src="~/UserControl/Navbar.ascx" TagName="Footer" TagPrefix="bs4" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
