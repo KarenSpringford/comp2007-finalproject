@@ -14,7 +14,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
             <ul class="nav navbar-nav navbar-right">
-                <li id="Home Page" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                <li id="HomePage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
                 <li id="Schedule" runat="server"><a href="Schedule.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Schedule</a></li>
                 <li id="Teams" runat="server"><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
                 <li id="Stats" runat="server"><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats</a></li>

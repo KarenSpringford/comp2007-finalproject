@@ -18,3 +18,4 @@ C:\Users\Karen\Desktop\comp2007-finalproject\comp2007-finalproject\bin\Microsoft
 C:\Users\Karen\Desktop\comp2007-finalproject\comp2007-finalproject\obj\Debug\comp2007-finalproject.csprojResolveAssemblyReference.cache
 C:\Users\Karen\Desktop\comp2007-finalproject\comp2007-finalproject\obj\Debug\comp2007-finalproject.dll
 C:\Users\Karen\Desktop\comp2007-finalproject\comp2007-finalproject\obj\Debug\comp2007-finalproject.pdb
+C:\Users\Karen\Desktop\comp2007-finalproject\comp2007-finalproject\bin\AspNet.ScriptManager.jQuery.dll

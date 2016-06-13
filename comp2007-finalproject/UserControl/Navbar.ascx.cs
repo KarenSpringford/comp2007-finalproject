@@ -19,7 +19,7 @@ namespace comp2007_finalproject
             switch (Page.Title)
             {
                 case "Home Page":
-                    Home.Attributes.Add("class", "active");
+                    HomePage.Attributes.Add("class", "active");
                     break;
                 case "Schedule":
                     Schedule.Attributes.Add("class", "active");
