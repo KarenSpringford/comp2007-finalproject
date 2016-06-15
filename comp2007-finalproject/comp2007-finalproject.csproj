@@ -85,6 +85,7 @@
     <Content Include="Default.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="gameChecker.sql" />
     <Content Include="UserControl\Footer.ascx" />
     <Content Include="UserControl\Navbar.ascx" />
     <Content Include="packages.config" />
