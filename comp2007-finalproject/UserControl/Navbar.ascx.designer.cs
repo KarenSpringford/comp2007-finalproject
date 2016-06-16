@@ -13,48 +13,48 @@ namespace comp2007_finalproject {
     public partial class Navbar {
         
         /// <summary>
-        /// HomePage control.
+        /// homepage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl HomePage;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl homepage;
         
         /// <summary>
-        /// Schedule control.
+        /// schedule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Schedule;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl schedule;
         
         /// <summary>
-        /// Teams control.
+        /// teams control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Teams;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl teams;
         
         /// <summary>
-        /// Stats control.
+        /// stats control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Stats;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl stats;
         
         /// <summary>
-        /// Contact control.
+        /// contact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Contact;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
     }
 }

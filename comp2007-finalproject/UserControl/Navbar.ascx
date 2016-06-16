@@ -1,4 +1,12 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="comp2007_finalproject.Navbar" %>
+﻿<%--
+/**
+ * @file Navbar.ascx
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Global Navbar for the Sport Tracking App
+ */ 
+--%>
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="comp2007_finalproject.Navbar" %>
 <nav id="navbar" class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -14,11 +22,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
             <ul class="nav navbar-nav navbar-right">
-                <li id="HomePage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                <li id="Schedule" runat="server"><a href="Schedule.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Schedule</a></li>
-                <li id="Teams" runat="server"><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
-                <li id="Stats" runat="server"><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats</a></li>
-                <li id="Contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
+                <li id="homepage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                <li id="schedule" runat="server"><a href="Schedule.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Schedule</a></li>
+                <li id="teams" runat="server"><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
+                <li id="stats" runat="server"><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats</a></li>
+                <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
