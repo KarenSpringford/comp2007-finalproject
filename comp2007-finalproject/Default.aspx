@@ -13,7 +13,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="col-md-offset-3 col-md-6">
-        <h1>DodgeBall Pathetics League</h1>
+        <h1>
+            DodgeBall Pathetics League
+            <i class="fa fa-female fa-lg"></i>
+            <i class="fa fa-circle-o fa-sm"></i>
+            <i class="fa fa-male fa-lg"></i>
+        </h1>
         <p>DodgeBall Federation of Barrie</p>
         <p>Welcome to Summer 2016 DodgeBall Summer Intermurals!</p>
         <p>If you can dodge a wrench you can dodge a ball!</p>
