@@ -28,13 +28,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*not sure what this does 2016.06.15*/
-#blah {
-    position: static;
-    align-content: center;
-    width: 60%;
-}
-
 /*also not sure what this does 2016.06.15*/
 #schedule {
     position: static;
