@@ -27,6 +27,7 @@
                 <li id="teams" runat="server"><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
                 <li id="stats" runat="server"><a href="Stats.aspx"><i class="fa fa-thumbs-o-up fa-lg" aria-hidden="true"></i> Stats</a></li>
                 <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
+                <li id="documentation" runat="server"><a href="Documentation.aspx"><i class="fa fa-book fa-lg"></i> Documentation</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
