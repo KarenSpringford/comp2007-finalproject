@@ -40,3 +40,17 @@ C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-fina
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\comp2007-finalproject.dll.config
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\comp2007-finalproject.dll
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\comp2007-finalproject.pdb
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\csc.exe.config
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\csc.rsp
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\csi.exe
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\csi.rsp
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\System.AppContext.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\vbc.exe.config
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\roslyn\vbc.rsp

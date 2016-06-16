@@ -1,4 +1,13 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="comp2007_finalproject.Public" %>
+﻿<%--
+/**
+ * @file Public.Master
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Public Master View for Sports Tracking App
+ */ 
+--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="comp2007_finalproject.Public" %>
 
 <%@ Register Src="~/UserControl/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
 
@@ -7,7 +16,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <!---CSS Section -->
+    <!-- CSS Section -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
@@ -40,10 +49,8 @@
                 </p>
             </div>
         </footer>
-
     </form>
-    <!--- JAVASCRIPT -->
-
+    <!-- JAVASCRIPT -->
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/app.js"></script>
