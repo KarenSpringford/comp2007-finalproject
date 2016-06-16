@@ -76,3 +76,51 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+
+
+/*Branding Colours
+-------------------------------------------------- */
+/*Google+ Red */
+.google-plus-red
+, a.google-plus-red:link
+, a.google-plus-red:visited
+, a.google-plus-red:hover
+, a.google-plus-red:active {
+    color: #d34836;
+}
+
+/*Facebook Blue*/
+.facebook-blue
+, a.facebook-blue:link
+, a.facebook-blue:visited
+, a.facebook-blue:hover
+, a.facebook-blue:active {
+    color:#3B5998;
+}
+
+/*Linkedin blue*/
+.linked-in-blue
+, a.linked-in-blue:link
+, a.linked-in-blue:visited
+, a.linked-in-blue:hover
+, a.linked-in-blue:active{
+    color:#0077B5;
+}
+
+/*Github Black*/
+.github-black
+, a.github-black:link
+, a.github-black:visited
+, a.github-black:hover
+, a.github-black:active{
+    color:#333;
+}
+
+/*Twitter Blue*/
+.twitter-blue
+, a.twitter-blue:link
+, a.twitter-blue:visited
+, a.twitter-blue:hover
+, a.twitter-blue:active{
+    color:#55acee;
+}

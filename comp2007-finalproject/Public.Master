@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="comp2007_finalproject.Public" %>
 
 <%@ Register Src="~/UserControl/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
-<%@ Register Src="~/UserControl/Footer.ascx" TagName="Footer" TagPrefix="bs4" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -27,7 +27,7 @@
                 <p class="text-muted">
                     &copy; Karen Springford 
                     <a href="#"><i class="fa fa-facebook-official fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                    <a href="#" class="orange"><i class="fa fa-google-plus-square fa-lg"></i></a>
                     <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
                     <a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a>
                     <a href="#"><i class="fa fa-github-square fa-lg"></i></a>
