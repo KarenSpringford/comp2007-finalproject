@@ -86,7 +86,6 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gameChecker.sql" />
-    <Content Include="UserControl\Footer.ascx" />
     <Content Include="UserControl\Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Public.Master" />
@@ -136,13 +135,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\Footer.ascx.cs">
-      <DependentUpon>Footer.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UserControl\Footer.ascx.designer.cs">
-      <DependentUpon>Footer.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
