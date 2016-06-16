@@ -5,41 +5,51 @@
  + * @desc holds custom CSS for the Sports Tracking App
  + */ 
 
+/*For downgradeing the size of the logo to fit in the top corner*/
 #logo {
     width: 40px;
     height: 35px;
     align-content: center;
 }
 
+/*Adds colour to the navbar*/
 #navbar {
     background: linear-gradient(to right,rgb(204, 230, 255),rgb(255, 88, 78));
 }
 
+/*Changes the font of headings*/
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*Changes the background of the body area and the font*/
 body {
     background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*not sure what this does 2016.06.15*/
 #blah {
     position: static;
     align-content: center;
     width: 60%;
 }
 
+/*also not sure what this does 2016.06.15*/
 #schedule {
     position: static;
     align-content: center;
     width: 60%;
 }
+
+/*not sure what this is for 2016.06.16*/
 #address{
     position:center;
     align-content:center;
     border:1px solid white;
 }
+
+/*will be replaced by the sticky footer 2016.06.15*/
 #footer{
    position:static;
    bottom:0;
