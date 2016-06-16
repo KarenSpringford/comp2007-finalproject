@@ -80,6 +80,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Documentation.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gameChecker.sql" />
@@ -133,6 +134,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documentation.aspx.cs">
+      <DependentUpon>Documentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documentation.aspx.designer.cs">
+      <DependentUpon>Documentation.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
