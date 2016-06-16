@@ -70,10 +70,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\facebook.png" />
-    <Content Include="Assets\google.png" />
     <Content Include="Assets\logo-smaller.png" />
-    <Content Include="Assets\twitter.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
