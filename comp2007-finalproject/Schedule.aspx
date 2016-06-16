@@ -1,4 +1,12 @@
-﻿<%@ Page Title="Schedule" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Schedule.aspx.cs" Inherits="comp2007_finalproject.Schedule" %>
+﻿<%--
+/**
+ * @file Schedule.aspx
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Schedule Page for the Sports Tracking App
+ */ 
+--%>
+<%@ Page Title="Schedule" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Schedule.aspx.cs" Inherits="comp2007_finalproject.Schedule" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
         <div class="container">
         <div class ="row">

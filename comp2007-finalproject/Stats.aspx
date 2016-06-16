@@ -1,4 +1,12 @@
-﻿<%@ Page Title="Stats" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Stats.aspx.cs" Inherits="comp2007_finalproject.Stats" %>
+﻿<%--
+/**
+ * @file Stats.aspx
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Statistics Page for the Sports Tracking App
+ */ 
+--%>
+<%@ Page Title="Stats" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Stats.aspx.cs" Inherits="comp2007_finalproject.Stats" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class ="row">

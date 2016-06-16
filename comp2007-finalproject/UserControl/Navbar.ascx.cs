@@ -16,11 +16,13 @@ using System.Web.UI.WebControls;
  */
 namespace comp2007_finalproject
 {
+
     /**
      * @class Navbar
      */ 
 	public partial class Navbar : System.Web.UI.UserControl
 	{
+
         /**
          * @description Event Handler for Page load event
          * @method Page_Load

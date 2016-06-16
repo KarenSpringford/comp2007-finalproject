@@ -1,4 +1,12 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="comp2007_finalproject.Contact" %>
+﻿<%--
+/**
+ * @file Contact.aspx
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Contact Page for the Sports Tracking App
+ */ 
+--%>
+<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="comp2007_finalproject.Contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">

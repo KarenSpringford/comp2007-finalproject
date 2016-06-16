@@ -1,15 +1,35 @@
-﻿using System;
+﻿/**
+ * @file Public.Master.cs
+ * @author Aristotle Rovithis & Karen Springford
+ * @version 0.0.2
+ * @desc Logic for the Public.Master Page
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+/**
+ * @namespace comp2007_finalprject
+ */
 namespace comp2007_finalproject
 {
-	public partial class Public : System.Web.UI.MasterPage
+    /**
+     * @class Public
+     */
+    public partial class Public : System.Web.UI.MasterPage
 	{
-		protected void Page_Load(object sender, EventArgs e)
+
+        /**
+         * @description Event Handler for Page load event
+         * @method Page_Load
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @return {void}
+         */
+        protected void Page_Load(object sender, EventArgs e)
 		{
 
 		}
