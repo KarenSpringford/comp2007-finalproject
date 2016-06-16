@@ -26,17 +26,17 @@
             <div class="container">
                 <p class="text-muted">
                     &copy; Karen Springford 
-                    <a href="#"><i class="fa fa-facebook-official fa-lg"></i></a>
-                    <a href="#" class="orange"><i class="fa fa-google-plus-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-github-square fa-lg"></i></a>
+                    <a href="#" class="facebook-blue"><i class="fa fa-facebook-official fa-lg"></i></a>
+                    <a href="#" class="google-plus-red"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                    <a href="#" class="twitter-blue"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    <a href="#" class="linked-in-blue"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    <a href="#" class="github-black"><i class="fa fa-github-square fa-lg"></i></a>
                     & Aristotle Rovithis 
-                    <a href="#"><i class="fa fa-facebook-official fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a>
-                    <a href="#"><i class="fa fa-github-square fa-lg"></i></a>
+                    <a href="#" class="facebook-blue"><i class="fa fa-facebook-official fa-lg"></i></a>
+                    <a href="#" class="google-plus-red"><i class="fa fa-google-plus-square fa-lg"></i></a>
+                    <a href="#" class="twitter-blue"><i class="fa fa-twitter-square fa-lg"></i></a>
+                    <a href="#" class="linked-in-blue"><i class="fa fa-linkedin-square fa-lg"></i></a>
+                    <a href="#" class="github-black"><i class="fa fa-github-square fa-lg"></i></a>
                 </p>
             </div>
         </footer>
