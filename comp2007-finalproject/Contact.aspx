@@ -15,9 +15,9 @@
                     </div>
                     <div class="panel-body" id="address">
                         <address>
-                            <strong>DodgeBall Federation of Barrie</strong><br>
-                            333 Elm Street<br>
-                            Barrie ON  L3Y5V9<br>
+                            <strong>DodgeBall Federation of Barrie</strong><br />
+                            333 Elm Street<br />
+                            Barrie ON  L3Y5V9<br />
                             <abbr title="Phone">Tel:</abbr>
                             (705)867-5309
                         </address>
