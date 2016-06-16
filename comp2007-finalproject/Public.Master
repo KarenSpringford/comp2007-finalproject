@@ -1,29 +1,30 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Public.master.cs" Inherits="comp2007_finalproject.Public" %>
-
+<%@ Register Src="~/UserControl/Navbar.ascx" TagName="Navbar" TagPrefix="bs3" %>
+<%@ Register Src="~/UserControl/Footer.ascx" TagName="Footer" TagPrefix="bs4" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+        <!---CSS Section -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>   
 </head>
 <body>
-    <!---CSS Section -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./Content/app.css" />
-    <img id="logo" src="./Assets/logo-smaller.png" alt="Logo" />
     <form id="form1" runat="server">
+        <bs3:Navbar runat="server"></bs3:Navbar>
         <div>
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">     
             </asp:ContentPlaceHolder>
         </div>
     </form>
     <!--- JAVASCRIPT -->
-              
     <script src="Scripts/jquery-2.2.3.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <bs4:Footer runat="server"></bs4:Footer>
 </body>
 </html>

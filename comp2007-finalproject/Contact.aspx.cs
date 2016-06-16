@@ -13,5 +13,10 @@ namespace comp2007_finalproject
 		{
 
 		}
-	}
+
+        protected void SendButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
+    }
 }
