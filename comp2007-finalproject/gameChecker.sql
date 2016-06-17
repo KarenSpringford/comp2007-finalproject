@@ -9,9 +9,8 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Games](
 	[GameID] [int] IDENTITY (1, 1) NOT NULL,
-	[TeamName] [varchar](50) NOT NULL,
-	[TotalPoints] [int] NOT NULL,
 	[Description] [varchar] (100) NOT NULL,
+	[TotalPoints] [int] NOT NULL Default '0',
 	[Winner] [varchar](50),
 	[Spectators] [int] NOT NULL,
 	[GameDate] [date] NOT NULL,
@@ -30,10 +29,9 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Teams](
-	[TeamID] [int] IDENTITY (1, 1) NOT NULL,
+	[TeamID] [int] NOT NULL Primary Key Identity,
 	[TeamName] [varchar](50) NOT NULL,
-	[Points] [int] NOT NULL,
-	[Description] [varchar] (100) NOT NULL,
+	[Points] [int] NOT NULL DEFAULT ' ',
  CONSTRAINT [PK_Teams] PRIMARY KEY CLUSTERED 
 (
 	[TeamID] ASC
@@ -44,87 +42,82 @@ SET ANSI_PADDING OFF
 GO
 
 --Teams
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team01', 5, 'GirlScout DropOuts');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('GirlScout DropOuts', 5);
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team02', 3 , 'All Dodge No Balls');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('All Dodge No Balls', 3);
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team03', 8 , 'DodgieBirds');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('DodgieBirds', 8 );
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team04', 1 , 'Gym Class Heroes');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('Gym Class Heroes', 1);
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team05', 6 , 'Not In the Face');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('Not In the Face', 6 );
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team06', 4 , 'Much Ado About Balls');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('Much Ado About Balls', 4 );
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team07', 5 , 'Ballsagna');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('Ballsagna', 5 );
 
-INSERT INTO Teams(Name, Points, Description)
-VALUES ('Team08', 5 , 'Balls & Dolls');
+INSERT INTO Teams(TeamID, TeamName, Points)
+VALUES ('Balls & Dolls', 5 );
 
 
 -- Games
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 1', 2, 'Game between Team01 and Team02', 'Team01', 20, '2016-05-25');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('GirlScout DropOuts vs All Dodge No Balls', 2, 'GirlScout DropOuts', 20, '2016-05-25');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 1', 2, 'Game between Team03 and Team04', 'Team03' , 10,'2016-05-25');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('DodgieBirds vs Gym Class Heroes ', 2, 'DodgieBirds' , 10,'2016-05-25');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 1', 2, 'Game between Team05 and Team06', 'Team06' , 10,'2016-05-25');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('Not in the Face vs Much Ado About Balls', 2, 'Much Ado About Balls' , 10,'2016-05-25');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 1', 2, 'Game between Team07 and Team08', 'Team08' , 2,'2016-05-25');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('Ballsagna vs Balls & Dolls', 2, 'Balls & Dolls' , 2,'2016-05-25');
 
 -- Game 2 Series--
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 2', 2, 'Game between Team0 and Team04', 'Team03' , 10,'2016-06-01');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('GirlScout DropOuts vs Balls & Dolls', 2, 'Balls & Dolls' , 7,'2016-06-01');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 2', 2, 'Game between Team01 and Team08', 'Team08' , 7,'2016-06-01');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES( 'All Dodge No Balls vs Ballsagna', 2, 'Ballsagna' , 0,'2016-06-01');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 2', 2, 'Game between Team02 and Team07', 'Team07' , 0,'2016-06-01');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('DodgieBirds vs Much Ado About Balls', 2, 'DodgieBirds' , 4,'2016-06-01');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 2', 2, 'Game between Team03 and Team06', 'Team03' , 4,'2016-06-01');
-
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 2', 3, 'Game between Team04 and Team05', 'Team05' , 1,'2016-06-01');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('Gym Class Heroes vs Not In the Face', 3, 'Not in the Face' , 1,'2016-06-01');
 
 -- Game 3 Series--
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 3', 3, 'Game between Team01 and Team05', 'Team05' , 4,'2016-06-08');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('GirlScout DropOuts vs Not In the Face', 3, 'Not In the Face' , 4,'2016-06-08');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 3', 2, 'Game between Team02 and Team08', 'Team02' , 7,'2016-06-08');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('All Dodge No Balls and Balls & Dolls', 2, 'All Dodge No Balls' , 7,'2016-06-08');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 3', 3, 'Game between Team03 and Team07', 'Team03' , 4,'2016-06-08');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('DodgieBirds and Ballsagna', 3, 'Ballsagna' , 4,'2016-06-08');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 3', 2, 'Game between Team04 and Team06', 'Team06' , 2,'2016-06-08');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('Gym Class Heroes and Much Ado About Balls', 2, 'Much Ado About Balls' , 2,'2016-06-08');
 
 -- Game 4 Series--
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 4', 2, 'Game between Team01 and Team06', 'Team01' , 4,'2016-06-15');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('GirlScout DropOuts vs Much Ado About Balls', 2, 'GirlScout DropOuts' , 4,'2016-06-15');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 4', 3, 'Game between Team02 and Team05', 'Team05' , 8,'2016-06-15');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('All Dodge No Balls and Not In the Face', 3,  'Not In the Face' , 8,'2016-06-15');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 4', 3, 'Game between Team03 and Team08', 'Team03' , 0,'2016-06-15');
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('DodgieBirds and Balls & Dolls', 3, 'DodgieBirds' , 0,'2016-06-15');
 
-INSERT INTO Games(Name, TotalPoints, Description, Winner, Spectators, GameDate)
-VALUES('Game 4', 2, 'Game between Team04 and Team07', 'Team07' , 12,'2016-06-15');
-
-
+INSERT INTO Games(GameID, Description, TotalPoints, Winner, Spectators, GameDate)
+VALUES('Gym Class Heroes and Ballsagna', 2, 'Ballsagna' , 12,'2016-06-15');
 
 
 SELECT * FROM Teams;
