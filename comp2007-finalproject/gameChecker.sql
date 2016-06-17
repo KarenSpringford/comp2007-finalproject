@@ -1,5 +1,5 @@
-DROP TABLE Games;
-DROP TABLE Teams;
+DROP TABLE dbo.Games;
+DROP TABLE dbo.Teams;
 
 /* Object: Table [dbo].[Games] */
 GO
@@ -48,8 +48,7 @@ VALUES ('GirlScout DropOuts');
 INSERT INTO Teams(TeamName)
 VALUES ('All Dodge No Balls');
 
-INSERT INTO Teams(TeamName)
-VALUES ('DodgieBirds');
+INSERT INTO Teams VALUES ('DodgieBirds');
 
 INSERT INTO Teams(TeamName)
 VALUES ('Gym Class Heroes');

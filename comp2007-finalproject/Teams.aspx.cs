@@ -11,6 +11,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//using statements that are required to connect to EF DB
+using comp2007_finalproject.Models;
+using System.Web.ModelBinding;
+using System.Linq.Dynamic;
+
 /**
  * @namespace comp2007_finalprject
  */
@@ -33,5 +38,25 @@ namespace comp2007_finalproject
 		{
 
 		}
-	}
+
+        protected void GetStudents()
+        {
+            // connect to the entity framework
+
+            using (DefaultConnection db = new DefaultConnection())
+            {
+                //create a sortString for displayin informaiton
+                string sortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
+
+                //query the Students table using EF and LINQ
+                var Students = (from allStudents in db.Students
+                                select allStudents);
+
+                //bind the result to the gridview
+                StudentsGridView.DataSource = Students.AsQueryable().OrderBy(sortString).ToList();
+                StudentsGridView.DataBind();
+            }
+        }
+
+    }
 }
