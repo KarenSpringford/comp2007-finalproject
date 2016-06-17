@@ -15,9 +15,9 @@
     <div class="col-md-offset-3 col-md-6">
         <h1>
             DodgeBall Pathetics League
-            <i class="fa fa-female fa-lg"></i>
-            <i class="fa fa-circle-o fa-sm"></i>
-            <i class="fa fa-male fa-lg"></i>
+            <i class="fa fa-female fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-circle-o fa-sm" aria-hidden="true"></i>
+            <i class="fa fa-male fa-lg" aria-hidden="true"></i>
         </h1>
         <p>DodgeBall Federation of Barrie</p>
         <p>Welcome to Summer 2016 DodgeBall Summer Intermurals!</p>
