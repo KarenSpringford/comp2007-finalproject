@@ -21,8 +21,9 @@
         </h1>
         <p>DodgeBall Federation of Barrie</p>
         <p>Welcome to Summer 2016 DodgeBall Summer Intermurals!</p>
+        </p>Our Season is officially underway!</p>
         <p>If you can dodge a wrench you can dodge a ball!</p>
         <p>Come and have some fun with your friends and compete in an intense summer intermural program.</p>
-        <p>Sign up <strong>NOW!</strong> Season officially kicks off June 22, 2016 </p>
+        <p>Sign up <strong>NOW!</strong> for next Year!  Season started May 25, 2016 </p>
     </div>
 </asp:Content>
