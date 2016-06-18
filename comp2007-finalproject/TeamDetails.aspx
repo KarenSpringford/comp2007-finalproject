@@ -12,7 +12,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="TeamNameTextBox" placeholder="Team Name" required="true"></asp:TextBox>
                 </div>
                 <div class="text-right">
-                    <asp:Button Text="Cancel" runat="server" ID="CancelButton" CssClass="btn btn-warning btn-lg" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
+                    <asp:Button Text="Cancel" runat="server" ID="CancelButton" CssClass="btn btn-danger btn-lg" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                     <asp:Button Text="Save" runat="server" ID="SaveButton" CssClass="btn btn-primary btn-lg" OnClick="SaveButton_Click" />
                 </div>
             </div>
