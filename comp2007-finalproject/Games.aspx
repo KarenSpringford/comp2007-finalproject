@@ -26,7 +26,10 @@
                         <asp:BoundField DataField="AwayPoints" HeaderText="Away Points" Visible="true" SortExpression="AwayPoints" />
                         <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true" SortExpression="Spectators" />
                         <asp:BoundField DataField="GameDate" HeaderText="Game Date" Visible="true" SortExpression="GameDate" DataFormatString ="{0:MMM dd, yyyy}" />
-
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" NavigateUrl="~/GameDetails.aspx.cs"
+                            ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="TeamId" DataNavigateUrlFormatString="GameDetails.aspx?GameId={0}" />
+                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i>Delete"
+                            ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>
 
