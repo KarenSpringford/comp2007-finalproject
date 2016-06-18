@@ -17,6 +17,10 @@
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="TeamsGridView" AutoGenerateColumns="false">
                     <Columns>
                         <asp:BoundField DataField="TeamName" HeaderText="Team Name" Visible="true" SortExpression="TeamName" />
+                        <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" NavigateUrl="~/TeamDetails.aspx.cs"
+                            ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="TeamId" DataNavigateUrlFormatString="TeamDetails.aspx?TeamId={0}" />
+                        <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i>Delete"
+                            ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>
 
