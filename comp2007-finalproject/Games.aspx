@@ -18,20 +18,20 @@
                 <a href="GameDetails.aspx" class="btn btn-default btn-sm"><i class="fa fa-plus fa-lg"></i> Add a Game </a>
                 <br />
                 
-                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="GamesGridView" AutoGenerateColumns="false">
-                    <Columns>
-                        <asp:BoundField DataField="GameId" HeaderText="Game ID" Visible="true" SortExpression="GameId" />
-                        <asp:BoundField DataField="HomeTeamId" HeaderText="HomeTeam ID" Visible="true" SortExpression="HomeTeamId" />
-                        <asp:BoundField DataField="AwayTeamId" HeaderText="AwayTeam ID" Visible="true" SortExpression="AwayTeamId" />
-                        <asp:BoundField DataField="HomePoints" HeaderText="Home Points" Visible="true" SortExpression="HomePoints" />
-                        <asp:BoundField DataField="AwayPoints" HeaderText="Away Points" Visible="true" SortExpression="AwayPoints" />
-                        <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true" SortExpression="Spectators" />
-                        <asp:BoundField DataField="GameDate" HeaderText="Game Date" Visible="true" SortExpression="GameDate" DataFormatString ="{0:MMM dd, yyyy}" />
+                <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="GamesGridView" 
+                    AutoGenerateColumns="true">
+                    <%--<Columns>
+                        <asp:BoundField DataField="HomeTeamId" HeaderText="HomeTeam ID" Visible="true"   />
+                        <asp:BoundField DataField="AwayTeamId" HeaderText="AwayTeam ID" Visible="true"  />
+                        <asp:BoundField DataField="HomePoints" HeaderText="Home Points" Visible="true"  />
+                        <asp:BoundField DataField="AwayPoints" HeaderText="Away Points" Visible="true" />
+                        <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true"   />
+                        <asp:BoundField DataField="GameDate" HeaderText="Game Date" Visible="true"  DataFormatString ="{0:MMM dd, yyyy}" />
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" NavigateUrl="~/GameDetails.aspx.cs"
-                            ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="TeamId" DataNavigateUrlFormatString="GameDetails.aspx?GameId={0}" />
+                            ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="GameId" DataNavigateUrlFormatString="GameDetails.aspx?GameId={0}" />
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i>Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
-                    </Columns>
+                    </Columns>--%>
                 </asp:GridView>
 
             </div>

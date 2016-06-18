@@ -20,7 +20,7 @@ namespace comp2007_finalproject.Models
         public int HomePoints { get; set; }
         public int AwayPoints { get; set; }
         public int Spectators { get; set; }
-        public int GameDate { get; set; }
+        public System.DateTime GameDate { get; set; }
     
         public virtual Team Team { get; set; }
         public virtual Team Team1 { get; set; }

@@ -35,13 +35,13 @@
     <Key>
       <PropertyRef Name="GameId" />
     </Key>
-    <Property Name="GameId" Type="Int32" Nullable="false" />
+    <Property Name="GameId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="HomeTeamId" Type="Int32" Nullable="false" />
     <Property Name="AwayTeamId" Type="Int32" Nullable="false" />
     <Property Name="HomePoints" Type="Int32" Nullable="false" />
     <Property Name="AwayPoints" Type="Int32" Nullable="false" />
     <Property Name="Spectators" Type="Int32" Nullable="false" />
-    <Property Name="GameDate" Type="Int32" Nullable="false" />
+    <Property Name="GameDate" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="Team" Relationship="Self.fk_away" FromRole="Games" ToRole="Teams" />
     <NavigationProperty Name="Team1" Relationship="Self.fk_home" FromRole="Games" ToRole="Teams" />
   </EntityType>

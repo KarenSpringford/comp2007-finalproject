@@ -7,7 +7,7 @@ CREATE TABLE [dbo].[Teams]
 );
 CREATE TABLE [dbo].[Games]
 (
-	[GameId] INT NOT NULL PRIMARY KEY,
+	[GameId] INT NOT NULL PRIMARY KEY IDENTITY,
 	[HomeTeamId] INT NOT NULL,
 	[AwayTeamId] INT NOT NULL,
 	[HomePoints] INT NOT NULL DEFAULT 0,
@@ -33,3 +33,20 @@ VALUES ('GirlScout DropOuts')
 , ('Ballsagna')
 , ('Balls & Dolls');
 
+
+
+--select Home,t2.TeamName as Away,TotalPoints,Spectators ,GameDate from 
+--	(select
+--		  t1.TeamName as Home
+--		, AwayTeamId as w
+--		, (HomePoints+ AwayPoints) as TotalPoints 
+--		, Spectators 
+--		, GameDate
+--	from Games
+--	inner join 
+--		Teams t1 on TeamId = HomeTeamId ) p
+--inner join Teams t2 on TeamId = w
+
+--select  t1.TeamName as Home, t2.TeamName as Away, (g.HomePoints+g.AwayPoints),g.Spectators from games g
+--left join teams t1 on g.HomeTeamId = t1.TeamId
+--left join teams t2 on g.AwayTeamId = t2.TeamId

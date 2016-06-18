@@ -44,14 +44,17 @@ namespace comp2007_finalproject
         }
         protected void GetGames()
         {
-            // connect to the entity framework
+            // connect to the entity framework5
 
             using (TeamConnection db = new TeamConnection())
             {
 
                 //query the Students table using EF and LINQ
-                var games = (from allGames in db.Games
-                             select allGames);
+                var games = (from allG in db.Games
+                             join t1 in db.Teams on allG.HomeTeamId equals t1.TeamId into allG2
+                             from item in allG2.DefaultIfEmpty(new Team  {TeamName = "Beavers" }) select allG2);
+               
+                
 
                 //bind the result to the gridview
                 GamesGridView.DataSource = games.ToList();
