@@ -17,6 +17,7 @@
                  <br />
                 <a href="GameDetails.aspx" class="btn btn-default btn-sm"><i class="fa fa-plus fa-lg"></i> Add a Game </a>
                 <br />
+                
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="GamesGridView" AutoGenerateColumns="false">
                     <Columns>
                         <asp:BoundField DataField="GameId" HeaderText="Game ID" Visible="true" SortExpression="GameId" />
