@@ -111,6 +111,7 @@
       <LastGenOutput>TModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\app.js" />
+    <Content Include="TeamDetails.aspx" />
     <Content Include="UserControl\Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Public.Master" />
@@ -213,6 +214,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamDetails.aspx.cs">
+      <DependentUpon>TeamDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamDetails.aspx.designer.cs">
+      <DependentUpon>TeamDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
