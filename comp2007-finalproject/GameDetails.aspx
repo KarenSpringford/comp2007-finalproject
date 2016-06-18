@@ -6,12 +6,8 @@
             <h1>Game Details</h1>
 
             <div class="form-group">
-                <label class="control-label" for="GameIdTextBox">GameId</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="GameIdTextBox" placeholder="Game Id" ReadOnly="false" Enabled="false"></asp:TextBox>
-            </div>
-            <div class="form-group">
                 <label class="control-label" for="HomeTeamIdTextBox">Home Team</label>
-                <asp:DropDownList ID="TeamID" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="HomeTeamDropDownList" runat="server" AutoPostBack="true"></asp:DropDownList>
             </div>
             <div class="form-group">
                 <label class="control-label" for="AwayTeamIdTextBox">Away Team</label>
@@ -19,7 +15,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label" for="AwayTeamIdTextBox">Away Team</label>
-                <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="AwayTeamDropDownList" runat="server"></asp:DropDownList>
             </div>
             <div class="form-group">
                 <label class="control-label" for="HomePointsTextBox">HomePoints</label>

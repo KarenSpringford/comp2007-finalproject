@@ -17,7 +17,20 @@ namespace comp2007_finalproject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            GetTeams();
+        }
 
+        protected void GetTeams()
+        {
+            using (TeamConnection db = new TeamConnection())
+            {
+                var teamQuery = (from allTeams in db.Teams
+                                 select allTeams.TeamName);
+                HomeTeamDropDownList.DataSource = teamQuery.ToList();
+                HomeTeamDropDownList.DataBind();
+                AwayTeamDropDownList.DataSource = teamQuery.ToList();
+                AwayTeamDropDownList.DataBind();
+            }
         }
 
         protected void CancelButton_Click(object sender, EventArgs e)

@@ -13,22 +13,13 @@ namespace comp2007_finalproject {
     public partial class GameDetails {
         
         /// <summary>
-        /// GameIdTextBox control.
+        /// HomeTeamDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox GameIdTextBox;
-        
-        /// <summary>
-        /// TeamID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList TeamID;
+        protected global::System.Web.UI.WebControls.DropDownList HomeTeamDropDownList;
         
         /// <summary>
         /// AwayTeamIdTextBox control.
@@ -40,13 +31,13 @@ namespace comp2007_finalproject {
         protected global::System.Web.UI.WebControls.TextBox AwayTeamIdTextBox;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// AwayTeamDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList AwayTeamDropDownList;
         
         /// <summary>
         /// HomePointsTextBox control.
