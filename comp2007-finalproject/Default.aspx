@@ -25,5 +25,7 @@
         <p>If you can dodge a wrench you can dodge a ball!</p>
         <p>Come and have some fun with your friends and compete in an intense summer intermural program.</p>
         <p>Sign up <strong>NOW!</strong> for next Year!  Season started May 25, 2016 </p>
+        <p> UpComing Week's Schedule </p>
+        <asp:Calendar runat="server"></asp:Calendar>
     </div>
 </asp:Content>

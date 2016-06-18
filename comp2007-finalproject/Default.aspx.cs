@@ -33,5 +33,10 @@ namespace comp2007_finalproject
 		{
 
 		}
-	}
+
+        protected void Unnamed_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
