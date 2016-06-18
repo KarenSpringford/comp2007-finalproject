@@ -13,10 +13,10 @@ namespace comp2007_finalproject.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class comp2007karenEntities : DbContext
+    public partial class TeamConnection : DbContext
     {
-        public comp2007karenEntities()
-            : base("name=comp2007karenEntities")
+        public TeamConnection()
+            : base("name=TeamConnection")
         {
         }
     
@@ -28,6 +28,7 @@ namespace comp2007_finalproject.Models
         public virtual DbSet<Cours> Courses { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<Enrollment> Enrollments { get; set; }
+        public virtual DbSet<Game> Games { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
     }

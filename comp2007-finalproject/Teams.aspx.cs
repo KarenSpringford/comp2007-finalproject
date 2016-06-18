@@ -36,25 +36,27 @@ namespace comp2007_finalproject
          */
         protected void Page_Load(object sender, EventArgs e)
 		{
+            if (!IsPostBack)
+            {
+            GetTeams();
 
+            }
 		}
 
-        protected void GetStudents()
+        protected void GetTeams()
         {
             // connect to the entity framework
 
-            using (DefaultConnection db = new DefaultConnection())
+            using (TeamConnection db = new TeamConnection())
             {
-                //create a sortString for displayin informaiton
-                string sortString = Session["SortColumn"].ToString() + " " + Session["SortDirection"].ToString();
 
                 //query the Students table using EF and LINQ
-                var Students = (from allStudents in db.Students
-                                select allStudents);
+                var teams = (from allTeams in db.Teams
+                                select allTeams);
 
                 //bind the result to the gridview
-                StudentsGridView.DataSource = Students.AsQueryable().OrderBy(sortString).ToList();
-                StudentsGridView.DataBind();
+                TeamsGridView.DataSource = teams.ToList();
+                TeamsGridView.DataBind();
             }
         }
 

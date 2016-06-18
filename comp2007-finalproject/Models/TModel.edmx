@@ -31,6 +31,18 @@
           <Property Name="StudentID" Type="int" Nullable="false" />
           <Property Name="Grade" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="int" Nullable="false" />
+          <Property Name="HomeTeamId" Type="int" Nullable="false" />
+          <Property Name="AwayTeamId" Type="int" Nullable="false" />
+          <Property Name="HomePoints" Type="int" Nullable="false" />
+          <Property Name="AwayPoints" Type="int" Nullable="false" />
+          <Property Name="Spectators" Type="int" Nullable="false" />
+          <Property Name="GameDate" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="Students">
           <Key>
             <PropertyRef Name="StudentID" />
@@ -42,11 +54,23 @@
         </EntityType>
         <EntityType Name="Teams">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="TeamId" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TeamId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TeamName" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <Association Name="fk_away">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Games" Type="Self.Games" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="TeamId" />
+            </Principal>
+            <Dependent Role="Games">
+              <PropertyRef Name="AwayTeamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Courses_DepartmentID">
           <End Role="Departments" Type="Self.Departments" Multiplicity="1" />
           <End Role="Courses" Type="Self.Courses" Multiplicity="*" />
@@ -83,12 +107,29 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_home">
+          <End Role="Teams" Type="Self.Teams" Multiplicity="1" />
+          <End Role="Games" Type="Self.Games" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="TeamId" />
+            </Principal>
+            <Dependent Role="Games">
+              <PropertyRef Name="HomeTeamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="comp2007karenModelStoreContainer">
           <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Enrollments" EntityType="Self.Enrollments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Games" EntityType="Self.Games" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Teams" EntityType="Self.Teams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="fk_away" Association="Self.fk_away">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Games" EntitySet="Games" />
+          </AssociationSet>
           <AssociationSet Name="FK_Courses_DepartmentID" Association="Self.FK_Courses_DepartmentID">
             <End Role="Departments" EntitySet="Departments" />
             <End Role="Courses" EntitySet="Courses" />
@@ -100,6 +141,10 @@
           <AssociationSet Name="FK_Enrollments_StudentID" Association="Self.FK_Enrollments_StudentID">
             <End Role="Students" EntitySet="Students" />
             <End Role="Enrollments" EntitySet="Enrollments" />
+          </AssociationSet>
+          <AssociationSet Name="fk_home" Association="Self.fk_home">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Games" EntitySet="Games" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -138,6 +183,20 @@
           <NavigationProperty Name="Cours" Relationship="Self.FK_Enrollments_CourseID" FromRole="Enrollments" ToRole="Courses" />
           <NavigationProperty Name="Student" Relationship="Self.FK_Enrollments_StudentID" FromRole="Enrollments" ToRole="Students" />
         </EntityType>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="Int32" Nullable="false" />
+          <Property Name="HomeTeamId" Type="Int32" Nullable="false" />
+          <Property Name="AwayTeamId" Type="Int32" Nullable="false" />
+          <Property Name="HomePoints" Type="Int32" Nullable="false" />
+          <Property Name="AwayPoints" Type="Int32" Nullable="false" />
+          <Property Name="Spectators" Type="Int32" Nullable="false" />
+          <Property Name="GameDate" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Team" Relationship="Self.fk_away" FromRole="Games" ToRole="Teams" />
+          <NavigationProperty Name="Team1" Relationship="Self.fk_home" FromRole="Games" ToRole="Teams" />
+        </EntityType>
         <EntityType Name="Student">
           <Key>
             <PropertyRef Name="StudentID" />
@@ -150,10 +209,12 @@
         </EntityType>
         <EntityType Name="Team">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="TeamId" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TeamId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Games" Relationship="Self.fk_away" FromRole="Teams" ToRole="Games" />
+          <NavigationProperty Name="Games1" Relationship="Self.fk_home" FromRole="Teams" ToRole="Games" />
         </EntityType>
         <Association Name="FK_Courses_DepartmentID">
           <End Role="Departments" Type="Self.Department" Multiplicity="1" />
@@ -191,10 +252,35 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="comp2007karenEntities" annotation:LazyLoadingEnabled="true">
+        <Association Name="fk_away">
+          <End Role="Teams" Type="Self.Team" Multiplicity="1" />
+          <End Role="Games" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="TeamId" />
+            </Principal>
+            <Dependent Role="Games">
+              <PropertyRef Name="AwayTeamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_home">
+          <End Role="Teams" Type="Self.Team" Multiplicity="1" />
+          <End Role="Games" Type="Self.Game" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teams">
+              <PropertyRef Name="TeamId" />
+            </Principal>
+            <Dependent Role="Games">
+              <PropertyRef Name="HomeTeamId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="TeamConnection" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Courses" EntityType="Self.Cours" />
           <EntitySet Name="Departments" EntityType="Self.Department" />
           <EntitySet Name="Enrollments" EntityType="Self.Enrollment" />
+          <EntitySet Name="Games" EntityType="Self.Game" />
           <EntitySet Name="Students" EntityType="Self.Student" />
           <EntitySet Name="Teams" EntityType="Self.Team" />
           <AssociationSet Name="FK_Courses_DepartmentID" Association="Self.FK_Courses_DepartmentID">
@@ -209,13 +295,21 @@
             <End Role="Students" EntitySet="Students" />
             <End Role="Enrollments" EntitySet="Enrollments" />
           </AssociationSet>
+          <AssociationSet Name="fk_away" Association="Self.fk_away">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Games" EntitySet="Games" />
+          </AssociationSet>
+          <AssociationSet Name="fk_home" Association="Self.fk_home">
+            <End Role="Teams" EntitySet="Teams" />
+            <End Role="Games" EntitySet="Games" />
+          </AssociationSet>
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="comp2007karenModelStoreContainer" CdmEntityContainer="comp2007karenEntities">
+        <EntityContainerMapping StorageEntityContainer="comp2007karenModelStoreContainer" CdmEntityContainer="TeamConnection">
           <EntitySetMapping Name="Courses">
             <EntityTypeMapping TypeName="comp2007karenModel.Cours">
               <MappingFragment StoreEntitySet="Courses">
@@ -245,6 +339,19 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="comp2007karenModel.Game">
+              <MappingFragment StoreEntitySet="Games">
+                <ScalarProperty Name="GameId" ColumnName="GameId" />
+                <ScalarProperty Name="HomeTeamId" ColumnName="HomeTeamId" />
+                <ScalarProperty Name="AwayTeamId" ColumnName="AwayTeamId" />
+                <ScalarProperty Name="HomePoints" ColumnName="HomePoints" />
+                <ScalarProperty Name="AwayPoints" ColumnName="AwayPoints" />
+                <ScalarProperty Name="Spectators" ColumnName="Spectators" />
+                <ScalarProperty Name="GameDate" ColumnName="GameDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="comp2007karenModel.Student">
               <MappingFragment StoreEntitySet="Students">
@@ -258,7 +365,7 @@
           <EntitySetMapping Name="Teams">
             <EntityTypeMapping TypeName="comp2007karenModel.Team">
               <MappingFragment StoreEntitySet="Teams">
-                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TeamId" ColumnName="TeamId" />
                 <ScalarProperty Name="TeamName" ColumnName="TeamName" />
               </MappingFragment>
             </EntityTypeMapping>
