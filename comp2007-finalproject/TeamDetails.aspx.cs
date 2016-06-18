@@ -52,7 +52,7 @@ namespace comp2007_finalproject
                 db.SaveChanges();
 
                 //redirect back to the updated students page
-                Response.Redirect("~/Students.aspx");
+                Response.Redirect("~/Teams.aspx");
             }
         }
 
