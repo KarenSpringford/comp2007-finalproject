@@ -148,7 +148,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Stats.aspx" />
+    <Content Include="Games.aspx" />
     <Content Include="Teams.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -229,12 +229,12 @@
     <Compile Include="Schedule.aspx.designer.cs">
       <DependentUpon>Schedule.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Stats.aspx.cs">
-      <DependentUpon>Stats.aspx</DependentUpon>
+    <Compile Include="Games.aspx.cs">
+      <DependentUpon>Games.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Stats.aspx.designer.cs">
-      <DependentUpon>Stats.aspx</DependentUpon>
+    <Compile Include="Games.aspx.designer.cs">
+      <DependentUpon>Games.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teams.aspx.cs">
       <DependentUpon>Teams.aspx</DependentUpon>

@@ -94,3 +94,6 @@ C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-fina
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\System.Linq.Dynamic.dll
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\EntityFramework.xml
 C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\EntityFramework.SqlServer.xml
+\\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\obj\Debug\comp2007-finalproject.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\obj\Debug\comp2007-finalproject.dll
+\\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\obj\Debug\comp2007-finalproject.pdb

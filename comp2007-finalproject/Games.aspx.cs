@@ -31,7 +31,27 @@ namespace comp2007_finalproject
          */
         protected void Page_Load(object sender, EventArgs e)
 		{
+            if (!IsPostBack)
+            {
+                GetGames();
 
-		}
-	}
+            }
+        }
+        protected void GetGames()
+        {
+            // connect to the entity framework
+
+            using (TeamConnection db = new TeamConnection())
+            {
+
+                //query the Students table using EF and LINQ
+                var games = (from allGames in db.Games
+                             select allGames);
+
+                //bind the result to the gridview
+                GamesGridView.DataSource = games.ToList();
+                GamesGridView.DataBind();
+            }
+        }
+    }
 }
