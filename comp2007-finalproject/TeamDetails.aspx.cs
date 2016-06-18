@@ -15,7 +15,28 @@ namespace comp2007_finalproject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(!IsPostBack
+                && Request.QueryString.Count > 0)
+            {
+                this.GetTeam();
+            }
+        }
 
+        protected void GetTeam()
+        {
+            int teamID = Convert.ToInt32(Request.QueryString["TeamId"]);
+
+            using (TeamConnection db = new TeamConnection())
+            {
+                Team updateTeam = (from team in db.Teams
+                                   where team.TeamId == teamID
+                                   select team).FirstOrDefault();
+
+                if (updateTeam != null)
+                {
+                    TeamNameTextBox.Text = updateTeam.TeamName;
+                }
+            }
         }
     
         protected void SaveButton_Click(object sender, EventArgs e)
