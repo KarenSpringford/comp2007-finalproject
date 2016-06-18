@@ -20,12 +20,12 @@ namespace comp2007_finalproject
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Teams.aspx");
         }
 
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Teams.aspx");
         }
     }
 }
