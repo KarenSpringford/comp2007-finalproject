@@ -41,29 +41,7 @@ GO
 SET ANSI_PADDING OFF
 GO
 
---Teams
-INSERT INTO Teams(TeamName)
-VALUES ('GirlScout DropOuts');
 
-INSERT INTO Teams(TeamName)
-VALUES ('All Dodge No Balls');
-
-INSERT INTO Teams VALUES ('DodgieBirds');
-
-INSERT INTO Teams(TeamName)
-VALUES ('Gym Class Heroes');
-
-INSERT INTO Teams(TeamName)
-VALUES ('Not In the Face');
-
-INSERT INTO Teams(TeamName)
-VALUES ('Much Ado About Balls');
-
-INSERT INTO Teams(TeamName)
-VALUES ('Ballsagna');
-
-INSERT INTO Teams(TeamName)
-VALUES ('Balls & Dolls');
 
 --	[GameID] [int] IDENTITY (1, 1) NOT NULL,
 --	[HomeTeam ID] [int] NOT NULL,
