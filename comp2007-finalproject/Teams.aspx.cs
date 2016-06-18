@@ -59,5 +59,22 @@ namespace comp2007_finalproject
             }
         }
 
+        protected void TeamsGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int selectedRow = e.RowIndex;
+
+            int TeamId = Convert.ToInt32(TeamsGridView.DataKeys[selectedRow].Values["TeamId"]);
+
+            using (TeamConnection db = new TeamConnection())
+            {
+                Team deleteTeam = (from team in db.Teams
+                                    where team.TeamId == TeamId
+                                    select team).FirstOrDefault();
+
+                db.Teams.Remove(deleteTeam);
+                db.SaveChanges();
+                this.GetTeams();
+            }
+        }
     }
 }
