@@ -13,5 +13,15 @@ namespace comp2007_finalproject
         {
 
         }
+
+        protected void SaveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void CancelButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
