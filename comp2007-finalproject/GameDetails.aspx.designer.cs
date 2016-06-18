@@ -22,15 +22,6 @@ namespace comp2007_finalproject {
         protected global::System.Web.UI.WebControls.DropDownList HomeTeamDropDownList;
         
         /// <summary>
-        /// AwayTeamIdTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AwayTeamIdTextBox;
-        
-        /// <summary>
         /// AwayTeamDropDownList control.
         /// </summary>
         /// <remarks>
@@ -83,6 +74,15 @@ namespace comp2007_finalproject {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
+        
+        /// <summary>
+        /// RangeValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator4;
         
         /// <summary>
         /// GameDateTextBox control.

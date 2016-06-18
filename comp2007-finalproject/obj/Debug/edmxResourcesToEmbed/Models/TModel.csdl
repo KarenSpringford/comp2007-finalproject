@@ -41,7 +41,7 @@
     <Property Name="HomePoints" Type="Int32" Nullable="false" />
     <Property Name="AwayPoints" Type="Int32" Nullable="false" />
     <Property Name="Spectators" Type="Int32" Nullable="false" />
-    <Property Name="GameDate" Type="Int32" Nullable="false" />
+    <Property Name="GameDate" Type="DateTime" Nullable="false" />
     <NavigationProperty Name="Team" Relationship="Self.fk_away" FromRole="Games" ToRole="Teams" />
     <NavigationProperty Name="Team1" Relationship="Self.fk_home" FromRole="Games" ToRole="Teams" />
   </EntityType>
