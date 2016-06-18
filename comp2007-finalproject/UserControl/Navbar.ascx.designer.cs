@@ -22,15 +22,6 @@ namespace comp2007_finalproject {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl homepage;
         
         /// <summary>
-        /// schedule control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl schedule;
-        
-        /// <summary>
         /// teams control.
         /// </summary>
         /// <remarks>
@@ -40,13 +31,13 @@ namespace comp2007_finalproject {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl teams;
         
         /// <summary>
-        /// stats control.
+        /// games control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl stats;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl games;
         
         /// <summary>
         /// contact control.

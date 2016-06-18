@@ -7,9 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace comp2007_finalproject {
-    
-    
-    public partial class Schedule {
+namespace comp2007_finalproject
+{
+
+
+    public partial class GameDetails
+    {
     }
 }

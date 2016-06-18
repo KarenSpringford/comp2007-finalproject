@@ -11,6 +11,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//using statements that are required to connect to EF DB
+using comp2007_finalproject.Models;
+using System.Web.ModelBinding;
+using System.Linq.Dynamic;
+
 /**
  * @namespace comp2007_finalprject
  */
