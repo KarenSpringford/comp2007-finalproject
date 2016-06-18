@@ -38,15 +38,18 @@ namespace comp2007_finalproject
                 //newGame.HomeTeamId = DropDownList.Equals.TeamID;
                 //newGame.AwayTeamId = DropDownList1.Equals.TeamID;
                 newGame.HomePoints = Convert.ToInt32(HomePointsTextBox.Text);
+                newGame.AwayPoints = Convert.ToInt32(AwayPointsTextBox.Text);
+                newGame.Spectators = Convert.ToInt32(SpectatorsTextBox.Text);
+                //newGame.GameDate = Convert.ToDateTime(GameDateTextBox.Text);
 
-                //use LINQ to ADO.net to add / insert my new Student into the DB
-                db.Students.Add(newStudent);
+                //use LINQ to ADO.net to add / insert my new Game into the DB
+                db.Games.Add(newGame);
 
                 //save our changes
                 db.SaveChanges();
 
-                //redirect back to the updated Students page
-                Response.Redirect("~/Students.aspx");
+                //redirect back to the updated Games page
+                Response.Redirect("~/Games.aspx");
             }
         }
     }

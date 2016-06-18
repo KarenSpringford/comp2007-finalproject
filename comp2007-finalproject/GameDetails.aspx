@@ -36,8 +36,8 @@
                     Type="Integer" Display="Dynamic" BackColor="Red" ForeColor="White" Font-Size="Large"></asp:RangeValidator>
             </div>
             <div class="form-group">
-                <label class="control-label" for="SpectatersTextBox">Spectators</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="SpectatersTextBox" placeholder="# of Spectators"></asp:TextBox>
+                <label class="control-label" for="SpectatorsTextBox">Spectators</label>
+                <asp:TextBox runat="server" CssClass="form-control" ID="SpectatorsTextBox" placeholder="# of Spectators"></asp:TextBox>
             </div>
             <div class="form-group">
                 <label class="control-label" for="GameDateTextBox">Game Date</label>

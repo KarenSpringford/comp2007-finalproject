@@ -85,13 +85,13 @@ namespace comp2007_finalproject {
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator2;
         
         /// <summary>
-        /// SpectatersTextBox control.
+        /// SpectatorsTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SpectatersTextBox;
+        protected global::System.Web.UI.WebControls.TextBox SpectatorsTextBox;
         
         /// <summary>
         /// GameDateTextBox control.

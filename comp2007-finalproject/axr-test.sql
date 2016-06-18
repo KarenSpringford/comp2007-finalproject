@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Games]
 	[HomePoints] INT NOT NULL DEFAULT 0,
 	[AwayPoints] INT NOT NULL DEFAULT 0,
 	[Spectators] INT NOT NULL DEFAULT 0,
-	[GameDate] INT NOT NULL,
+	[GameDate] DATE NOT NULL,
 	CONSTRAINT fk_home FOREIGN KEY ([HomeTeamId]) REFERENCES [dbo].[Teams]([TeamId]),
     CONSTRAINT fk_away FOREIGN KEY ([AwayTeamId]) REFERENCES [dbo].[Teams]([TeamId]),
 	CONSTRAINT chk_teams CHECk ([HomeTeamId] <> [AwayTeamId]),
