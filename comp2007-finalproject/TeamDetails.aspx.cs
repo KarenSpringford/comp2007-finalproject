@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//Using statements required for EF & DB
+using comp2007_finalproject.Models;
+using System.Web.ModelBinding;
+
 namespace comp2007_finalproject
 {
     public partial class TeamDetails : System.Web.UI.Page

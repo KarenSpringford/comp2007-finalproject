@@ -25,7 +25,7 @@ namespace comp2007_finalproject
      * @class Teams
      */
     public partial class Teams : System.Web.UI.Page
-	{
+    {
 
         /**
          * @description Event Handler for Page load event
@@ -35,13 +35,12 @@ namespace comp2007_finalproject
          * @return {void}
          */
         protected void Page_Load(object sender, EventArgs e)
-		{
+        {
             if (!IsPostBack)
             {
-            GetTeams();
-
+                GetTeams();
             }
-		}
+        }
 
         protected void GetTeams()
         {
@@ -52,7 +51,7 @@ namespace comp2007_finalproject
 
                 //query the Students table using EF and LINQ
                 var teams = (from allTeams in db.Teams
-                                select allTeams);
+                             select allTeams);
 
                 //bind the result to the gridview
                 TeamsGridView.DataSource = teams.ToList();
