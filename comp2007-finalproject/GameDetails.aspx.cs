@@ -27,7 +27,27 @@ namespace comp2007_finalproject
 
         protected void SaveButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Games.aspx");
+            //use EF to connect to the server
+            using (TeamConnection db = new TeamConnection())
+            {
+                //use the Student model to create a new student object and 
+                //save a new record
+                Game newGame = new Game();
+
+                //add data to the new Game record
+                //newGame.HomeTeamId = DropDownList.Equals.TeamID;
+                //newGame.AwayTeamId = DropDownList1.Equals.TeamID;
+                newGame.HomePoints = Convert.ToInt32(HomePointsTextBox.Text);
+
+                //use LINQ to ADO.net to add / insert my new Student into the DB
+                db.Students.Add(newStudent);
+
+                //save our changes
+                db.SaveChanges();
+
+                //redirect back to the updated Students page
+                Response.Redirect("~/Students.aspx");
+            }
         }
     }
 }
