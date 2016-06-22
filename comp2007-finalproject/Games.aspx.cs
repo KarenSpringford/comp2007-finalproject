@@ -39,7 +39,6 @@ namespace comp2007_finalproject
             if (!IsPostBack)
             {
                 GetGames();
-
             }
         }
         protected void GetGames()
@@ -50,16 +49,40 @@ namespace comp2007_finalproject
             {
 
                 //query the Students table using EF and LINQ
-                var games = (from allG in db.Games
-                             join t1 in db.Teams on allG.HomeTeamId equals t1.TeamId into allG2
-                             from item in allG2.DefaultIfEmpty(new Team  {TeamName = "Beavers" }) select allG2);
-               
-                
+                var games = (from g in db.Games
+                             join t1 in db.Teams on g.HomeTeamId equals t1.TeamId
+                             join t2 in db.Teams on  g.AwayTeamId equals t2.TeamId
+                             select new
+                             {
+                                Home = t1.TeamName,
+                                Away = t2.TeamName,
+                                Points = g.AwayPoints+g.HomePoints,
+                                Spectators = g.Spectators,
+                                GameDate = g.GameDate,
+                                GameId = g.GameId
+                             });
 
                 //bind the result to the gridview
                 GamesGridView.DataSource = games.ToList();
                 GamesGridView.DataBind();
             }
         }
+
+        protected void GamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int selectedRow = e.RowIndex;
+
+            int GameId = Convert.ToInt32(GamesGridView.DataKeys[selectedRow].Values["GameId"]);
+            using (TeamConnection db = new TeamConnection())
+            {
+                Game deleteGame = (from game in db.Games
+                                   where game.GameId == GameId
+                                   select game).FirstOrDefault();
+                db.Games.Remove(deleteGame);
+                db.SaveChanges();
+                this.GetGames();
+            }
+        }
+
     }
 }

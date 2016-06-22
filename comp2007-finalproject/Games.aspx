@@ -19,19 +19,19 @@
                 <br />
                 
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="GamesGridView" 
-                    AutoGenerateColumns="true">
-                    <%--<Columns>
-                        <asp:BoundField DataField="HomeTeamId" HeaderText="HomeTeam ID" Visible="true"   />
-                        <asp:BoundField DataField="AwayTeamId" HeaderText="AwayTeam ID" Visible="true"  />
-                        <asp:BoundField DataField="HomePoints" HeaderText="Home Points" Visible="true"  />
-                        <asp:BoundField DataField="AwayPoints" HeaderText="Away Points" Visible="true" />
+                    AutoGenerateColumns="false" OnRowDeleting="GamesGridView_RowDeleting" DataKeyNames="GameId">
+                    <Columns>
+                        <asp:BoundField DataField="GameId" Visible="false" />
+                        <asp:BoundField DataField="Home" HeaderText="Home Team" Visible="true"   />
+                        <asp:BoundField DataField="Away" HeaderText="Away Team" Visible="true"  />
+                        <asp:BoundField DataField="Points" HeaderText="Total Points" Visible="true"  />
                         <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true"   />
                         <asp:BoundField DataField="GameDate" HeaderText="Game Date" Visible="true"  DataFormatString ="{0:MMM dd, yyyy}" />
                         <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit" NavigateUrl="~/GameDetails.aspx.cs"
                             ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="GameId" DataNavigateUrlFormatString="GameDetails.aspx?GameId={0}" />
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i>Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
-                    </Columns>--%>
+                    </Columns>
                 </asp:GridView>
 
             </div>
