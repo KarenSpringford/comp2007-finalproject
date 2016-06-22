@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * @file GameDetails.aspx.cs
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version 0.0.2 Page created
+ * @history 
+ * @desc Logic for the GameDetails.aspx Page
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,11 +19,23 @@ using comp2007_finalproject.Models;
 using System.Web.ModelBinding;
 using System.Linq.Dynamic;
 
-
+/**
+ * @namespace comp2007_finalprject
+ */
 namespace comp2007_finalproject
 {
+    /**
+     * @class GameDetails
+     */
     public partial class GameDetails : System.Web.UI.Page
     {
+        /**
+         * @description Event Handler for Page load event, fills the table with the available teams
+         * @method Page_Load
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @return {void}
+         */
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -24,6 +45,11 @@ namespace comp2007_finalproject
             }
         }
 
+        /**
+         * @description Retrieves the list of teams from the database
+         * @method GetTeams
+         * @return {void}
+         */
         protected void GetTeams()
         {
             using (TeamConnection db = new TeamConnection())
@@ -37,11 +63,25 @@ namespace comp2007_finalproject
             }
         }
 
+        /**
+         * @description Event Handler for Cancel button press, redirects the user to the Games.aspx page
+         * @method CancelButton_Click
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @return {void}
+         */
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Games.aspx");
         }
 
+        /**
+         * @description Event Handler for save button press, saves the team into the database if all required fields are filed in
+         * @method SaveButton_Click
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @return {void}
+         */
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             //use EF to connect to the server

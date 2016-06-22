@@ -1,8 +1,11 @@
 ﻿<%--
 /**
- * @file Stats.aspx
- * @author Aristotle Rovithis & Karen Springford
- * @version 0.0.2
+ * @file Games.aspx
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version 0.0.3 page updated to work properly
+ * @history 0.0.2 page created
  * @desc Statistics Page for the Sports Tracking App
  */ 
 --%>
@@ -17,7 +20,6 @@
                  <br />
                 <a href="GameDetails.aspx" class="btn btn-default btn-sm"><i class="fa fa-plus fa-lg"></i> Add a Game </a>
                 <br />
-                
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" ID="GamesGridView" 
                     AutoGenerateColumns="false" OnRowDeleting="GamesGridView_RowDeleting" DataKeyNames="GameId">
                     <Columns>
@@ -33,7 +35,6 @@
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>
-
             </div>
         </div>
     </div>

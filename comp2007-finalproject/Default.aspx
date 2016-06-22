@@ -1,8 +1,11 @@
 ﻿<%--
 /**
  * @file Default.aspx
- * @author Aristotle Rovithis & Karen Springford
- * @version 0.0.2
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version  0.0.2 page created
+ * @history 
  * @desc Default Page for the Sports Tracking App
  */ 
 --%>

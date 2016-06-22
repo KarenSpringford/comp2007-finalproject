@@ -1,4 +1,15 @@
-﻿<%@ Page Title="Team Details" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="TeamDetails.aspx.cs" Inherits="comp2007_finalproject.TeamDetails" %>
+﻿<%-- 
+/**
+ * @file TeamDetails.aspx
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version 0.0.1 Page created
+ * @history 
+ * @desc Allows users to make new teams or edit the teams in the database from Teams.aspx
+ */  
+--%>
+<%@ Page Title="Team Details" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="TeamDetails.aspx.cs" Inherits="comp2007_finalproject.TeamDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

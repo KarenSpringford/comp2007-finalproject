@@ -1,8 +1,11 @@
 ﻿<%--
 /**
  * @file Documentation.aspx
- * @author Aristotle Rovithis & Karen Springford
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
  * @version 0.0.2
+ * @history 
  * @desc Links to the sources that fuel this project because bros
  */ 
 --%>

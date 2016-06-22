@@ -1,4 +1,15 @@
-﻿<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="comp2007_finalproject.GameDetails" %>
+﻿<%--
+/**
+ * @file 
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version  0.0.2 Page created
+ * @history 
+ * @desc Lists the details of a particular game
+ */ 
+--%>
+<%@ Page Title="Game Details" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="comp2007_finalproject.GameDetails" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">

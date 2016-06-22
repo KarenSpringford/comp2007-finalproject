@@ -1,10 +1,13 @@
 ﻿/**
- * @file Stats.ascx.cs
- * @author Aristotle Rovithis & Karen Springford
- * @version 0.0.2
- * @desc Logic for the Statistics Page
+ * @file Games.aspx.cs
+ * @author Aristotle Rovithis 200209736
+ * @author Karen Springford 200299681
+ * @modified 2016.06.21
+ * @version 0.0.2 Page created
+ * @history 
+ * @desc Logic for teh Games.apsx page
  */
- using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -41,6 +44,12 @@ namespace comp2007_finalproject
                 GetGames();
             }
         }
+
+        /**
+         * @description retrieves the games from the database
+         * @method GetGames
+         * @return {void}
+         */
         protected void GetGames()
         {
             // connect to the entity framework5
@@ -68,6 +77,13 @@ namespace comp2007_finalproject
             }
         }
 
+        /**
+         * @description Event Handler for deleteing a game
+         * @method GamesGridView_RowDeleting
+         * @param {object} sender
+         * @param {EventArgs} e
+         * @return {void}
+         */
         protected void GamesGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             int selectedRow = e.RowIndex;
