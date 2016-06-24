@@ -119,6 +119,9 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="DodgeBall\GameDetails.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="DodgeBall\MainMenu.aspx" />
     <Content Include="Models\TeamModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TeamModel.edmx</DependentUpon>
@@ -129,6 +132,7 @@
       <DependentUpon>TeamModel.edmx</DependentUpon>
       <LastGenOutput>TeamModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\app.js" />
     <Content Include="DodgeBall\TeamDetails.aspx" />
     <Content Include="UserControl\Navbar.ascx" />
@@ -201,6 +205,27 @@
     <Compile Include="DodgeBall\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DodgeBall\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DodgeBall\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Cours.cs">
       <DependentUpon>TeamModel.tt</DependentUpon>
     </Compile>
@@ -241,6 +266,14 @@
     <Compile Include="DodgeBall\TeamDetails.aspx.designer.cs">
       <DependentUpon>TeamDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="UserControl\Navbar.ascx.cs">
       <DependentUpon>Navbar.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
