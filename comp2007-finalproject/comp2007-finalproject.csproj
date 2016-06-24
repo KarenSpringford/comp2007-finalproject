@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\logo-smaller.png" />
-    <Content Include="DodgeBall\Contact.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -95,7 +95,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="axr-test.sql" />
     <Content Include="Default.aspx" />
-    <Content Include="DodgeBall\Documentation.aspx" />
+    <Content Include="Documentation.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="DodgeBall\GameDetails.aspx" />
@@ -153,11 +153,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DodgeBall\Contact.aspx.cs">
+    <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DodgeBall\Contact.aspx.designer.cs">
+    <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -167,11 +167,11 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DodgeBall\Documentation.aspx.cs">
+    <Compile Include="Documentation.aspx.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DodgeBall\Documentation.aspx.designer.cs">
+    <Compile Include="Documentation.aspx.designer.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
     </Compile>
     <Compile Include="DodgeBall\GameDetails.aspx.cs">
