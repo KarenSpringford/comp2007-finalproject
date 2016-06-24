@@ -2,7 +2,7 @@
  * @file TeamDetails.aspx.cs
  * @author Aristotle Rovithis 200209736
  * @author Karen Springford 200299681
- * @modified 2016.06.21
+ * @modified 2016.06.23
  * @version 0.0.1 Page created
  * @history 
  * @desc Logic for TeamDetails.aspx
@@ -108,7 +108,7 @@ namespace comp2007_finalproject
                 db.SaveChanges();
 
                 //redirect back to the updated students page
-                Response.Redirect("~/Teams.aspx");
+                Response.Redirect("~/DodgeBall/Teams.aspx");
             }
         }
 
@@ -122,7 +122,7 @@ namespace comp2007_finalproject
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             // redirect
-            Response.Redirect("~/Teams.aspx");
+            Response.Redirect("~/DodgeBall/Teams.aspx");
         }
     }
 }

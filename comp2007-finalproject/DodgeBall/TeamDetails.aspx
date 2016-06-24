@@ -3,7 +3,7 @@
  * @file TeamDetails.aspx
  * @author Aristotle Rovithis 200209736
  * @author Karen Springford 200299681
- * @modified 2016.06.21
+ * @modified 2016.06.23
  * @version 0.0.1 Page created
  * @history 
  * @desc Allows users to make new teams or edit the teams in the database from Teams.aspx
