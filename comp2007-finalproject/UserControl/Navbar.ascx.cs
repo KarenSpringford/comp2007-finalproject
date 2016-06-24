@@ -44,12 +44,20 @@ namespace comp2007_finalproject
          */
         private string addActiveClass()
         {
-            Object activeNode = (System.Web.UI.HtmlControls.HtmlGenericControl)FindControl(Page.Title.ToString().ToLower().Replace(" ", String.Empty));
+            // strips page title of caps and sapces
+            string activeLinkIdString = Page.Title.ToString().ToLower().Replace(" ", String.Empty);
+
+            // searches for a HTML node with that id
+            Object activeNode = (System.Web.UI.HtmlControls.HtmlGenericControl)FindControl(activeLinkIdString);
+
+            //if its found it gets an active class, if its not nothing happens
             if (activeNode != null)
             {
                 ((System.Web.UI.HtmlControls.HtmlGenericControl)activeNode).Attributes.Add("class", "active");
             }
-            return (Page.Title.ToString().ToLower().Replace(" ", String.Empty));
+
+            //returns the string for debugging purposes.
+            return activeLinkIdString;
         }
     }
 }
