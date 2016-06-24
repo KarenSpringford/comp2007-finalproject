@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace comp2007_finalproject
+namespace comp2007_finalproject.DodgeBall
 {
 
 
-    public partial class MainMenu
+    public partial class AdminMenu
     {
     }
 }

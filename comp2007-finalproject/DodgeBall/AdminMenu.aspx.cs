@@ -1,11 +1,11 @@
 ﻿/**
- * @file Login.ascx.cs
+ * @file AdminMenu.ascx.cs
  * @author Aristotle Rovithis 200209736
  * @author Karen Springford 200299681
  * @modified 2016.06.24
  * @version 0.0.1 Page created
  * @history 
- * @desc Logic for the Login page
+ * @desc Logic for the Administration menu page
  */
 using System;
 using System.Collections.Generic;
@@ -15,14 +15,15 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @namespace comp2007_finalprject
+ * @namespace
  */
-namespace comp2007_finalproject
+namespace comp2007_finalproject.DodgeBall
 {
+
     /**
-     * @class Login
+     * @class AdminMenu
      */
-    public partial class Login : System.Web.UI.Page
+    public partial class AdminMenu : System.Web.UI.Page
     {
 
         /**

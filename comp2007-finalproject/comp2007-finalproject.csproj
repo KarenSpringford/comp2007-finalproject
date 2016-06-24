@@ -116,12 +116,12 @@
     <Content Include="axr-test.sql" />
     <Content Include="Default.aspx" />
     <Content Include="Documentation.aspx" />
+    <Content Include="DodgeBall\AdminMenu.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="DodgeBall\GameDetails.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
-    <Content Include="DodgeBall\MainMenu.aspx" />
     <Content Include="Models\TeamModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TeamModel.edmx</DependentUpon>
@@ -198,6 +198,13 @@
     <Compile Include="Documentation.aspx.designer.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DodgeBall\AdminMenu.aspx.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DodgeBall\AdminMenu.aspx.designer.cs">
+      <DependentUpon>AdminMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DodgeBall\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -218,13 +225,6 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DodgeBall\MainMenu.aspx.cs">
-      <DependentUpon>MainMenu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DodgeBall\MainMenu.aspx.designer.cs">
-      <DependentUpon>MainMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Cours.cs">
       <DependentUpon>TeamModel.tt</DependentUpon>
