@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\logo-smaller.png" />
-    <Content Include="Contact.aspx" />
+    <Content Include="DodgeBall\Contact.aspx" />
     <Content Include="Content\app.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -95,10 +95,10 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="axr-test.sql" />
     <Content Include="Default.aspx" />
-    <Content Include="Documentation.aspx" />
+    <Content Include="DodgeBall\Documentation.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="GameDetails.aspx" />
+    <Content Include="DodgeBall\GameDetails.aspx" />
     <Content Include="Models\TeamModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TeamModel.edmx</DependentUpon>
@@ -110,7 +110,7 @@
       <LastGenOutput>TeamModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\app.js" />
-    <Content Include="TeamDetails.aspx" />
+    <Content Include="DodgeBall\TeamDetails.aspx" />
     <Content Include="UserControl\Navbar.ascx" />
     <Content Include="packages.config" />
     <Content Include="Public.Master" />
@@ -148,16 +148,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Games.aspx" />
-    <Content Include="Teams.aspx" />
+    <Content Include="DodgeBall\Games.aspx" />
+    <Content Include="DodgeBall\Teams.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact.aspx.cs">
+    <Compile Include="DodgeBall\Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
+    <Compile Include="DodgeBall\Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -167,18 +167,18 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Documentation.aspx.cs">
+    <Compile Include="DodgeBall\Documentation.aspx.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Documentation.aspx.designer.cs">
+    <Compile Include="DodgeBall\Documentation.aspx.designer.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GameDetails.aspx.cs">
+    <Compile Include="DodgeBall\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GameDetails.aspx.designer.cs">
+    <Compile Include="DodgeBall\GameDetails.aspx.designer.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Cours.cs">
@@ -214,11 +214,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TeamModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="TeamDetails.aspx.cs">
+    <Compile Include="DodgeBall\TeamDetails.aspx.cs">
       <DependentUpon>TeamDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TeamDetails.aspx.designer.cs">
+    <Compile Include="DodgeBall\TeamDetails.aspx.designer.cs">
       <DependentUpon>TeamDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Navbar.ascx.cs">
@@ -236,22 +236,23 @@
     <Compile Include="Public.Master.designer.cs">
       <DependentUpon>Public.Master</DependentUpon>
     </Compile>
-    <Compile Include="Games.aspx.cs">
+    <Compile Include="DodgeBall\Games.aspx.cs">
       <DependentUpon>Games.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Games.aspx.designer.cs">
+    <Compile Include="DodgeBall\Games.aspx.designer.cs">
       <DependentUpon>Games.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Teams.aspx.cs">
+    <Compile Include="DodgeBall\Teams.aspx.cs">
       <DependentUpon>Teams.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Teams.aspx.designer.cs">
+    <Compile Include="DodgeBall\Teams.aspx.designer.cs">
       <DependentUpon>Teams.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\" />
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

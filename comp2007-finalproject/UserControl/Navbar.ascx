@@ -23,10 +23,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">   
             <ul class="nav navbar-nav navbar-right">
                 <li id="homepage" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                <li id="teams" runat="server"><a href="Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
-                <li id="games" runat="server"><a href="Games.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Games</a></li>
-                <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
-                <li id="documentation" runat="server"><a href="Documentation.aspx"><i class="fa fa-book fa-lg"></i> Documentation</a></li>
+                <li id="teams" runat="server"><a href="/DodgeBall/Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
+                <li id="games" runat="server"><a href="/DodgeBall/Games.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Games</a></li>
+                <li id="contact" runat="server"><a href="/DodgeBall/Contact.aspx"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> Contact Us</a></li>
+                <li id="documentation" runat="server"><a href="/DodgeBall/Documentation.aspx"><i class="fa fa-book fa-lg"></i> Documentation</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
