@@ -119,7 +119,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Documentation.aspx" />
     <Content Include="Admin\AdminMenu.aspx" />
-    <Content Include="DodgeBall\DogdeballMenu.aspx" />
+    <Content Include="DodgeBall\DodgeballMenu.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="DodgeBall\GameDetails.aspx" />
@@ -222,12 +222,12 @@
     <Compile Include="Admin\AdminMenu.aspx.designer.cs">
       <DependentUpon>AdminMenu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DodgeBall\DogdeballMenu.aspx.cs">
-      <DependentUpon>DogdeballMenu.aspx</DependentUpon>
+    <Compile Include="DodgeBall\DodgeballMenu.aspx.cs">
+      <DependentUpon>DodgeballMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DodgeBall\DogdeballMenu.aspx.designer.cs">
-      <DependentUpon>DogdeballMenu.aspx</DependentUpon>
+    <Compile Include="DodgeBall\DodgeballMenu.aspx.designer.cs">
+      <DependentUpon>DodgeballMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="DodgeBall\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
