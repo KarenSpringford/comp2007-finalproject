@@ -2,4 +2,4 @@
 
 ## Dodge a ball because your life depends on it
 
-### sync up please
+### You must construct additional pylons
