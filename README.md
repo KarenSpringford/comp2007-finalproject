@@ -2,6 +2,4 @@
 
 ## Dodge a ball because your life depends on it
 
-### stick this commit!
-
-#### behold the git ignore!
+### sync up please
