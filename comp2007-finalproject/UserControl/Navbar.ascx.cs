@@ -22,9 +22,9 @@ namespace comp2007_finalproject
 
     /**
      * @class Navbar
-     */ 
-	public partial class Navbar : System.Web.UI.UserControl
-	{
+     */
+    public partial class Navbar : System.Web.UI.UserControl
+    {
 
         /**
          * @description Event Handler for Page load event
@@ -33,8 +33,24 @@ namespace comp2007_finalproject
          * @param {EventArgs} e
          * @return {void}
          */
-		protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
+            if (HttpContext.Current.User.Identity.IsAuthenticated)
+            {
+               
+                //show the DodgeBall Context area
+                AdminPlaceHolder.Visible = true;
+                DodgeBallPlaceHolder.Visible = true;
+                PublicPlaceHolder.Visible = false;
+            }
+            else
+            {
+                //only show login and register
+                AdminPlaceHolder.Visible = false;
+                DodgeBallPlaceHolder.Visible = false;
+                PublicPlaceHolder.Visible = true;
+            }
+
             addActiveClass();
         }
 
@@ -62,5 +78,7 @@ namespace comp2007_finalproject
             //returns the string for debugging purposes.
             return activeLinkIdString;
         }
+
+
     }
 }
