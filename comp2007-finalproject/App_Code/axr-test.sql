@@ -8,6 +8,7 @@ CREATE TABLE [dbo].[Teams]
 CREATE TABLE [dbo].[Games]
 (
 	[GameId] INT NOT NULL PRIMARY KEY IDENTITY,
+	[GameName] VARCHAR (50) NOT NULL,
 	[HomeTeamId] INT NOT NULL,
 	[AwayTeamId] INT NOT NULL,
 	[HomePoints] INT NOT NULL DEFAULT 0,
@@ -17,7 +18,8 @@ CREATE TABLE [dbo].[Games]
 	CONSTRAINT fk_home FOREIGN KEY ([HomeTeamId]) REFERENCES [dbo].[Teams]([TeamId]),
     CONSTRAINT fk_away FOREIGN KEY ([AwayTeamId]) REFERENCES [dbo].[Teams]([TeamId]),
 	CONSTRAINT chk_teams CHECk ([HomeTeamId] <> [AwayTeamId]),
-	CONSTRAINT chk_values_gte_0 CHECK ([HomePoints] >= 0 AND [AwayPoints] >= 0 AND [Spectators] >=0)
+	CONSTRAINT chk_values_gte_0 CHECK ([Spectators] >=0),
+	CONSTRAINT score_valid CHECK ([HomePoints] >=0 AND [HomePoints] <=3 AND [AwayPoints] >=0 AND [AwayPoints] <= 3)
 );
 
 
@@ -33,20 +35,9 @@ VALUES ('GirlScout DropOuts')
 , ('Ballsagna')
 , ('Balls & Dolls');
 
+INSERT INTO Games
+VALUES ('Initial', 1, 2, 1,2,1000, '2016-05-13 12:00:00')
+, ('Revenge', 1, 2, 3,1,1000, '2016-05-14 12:00:00')
+, ('Comeback', 1, 2, 2,0,1000, '2016-05-15 12:00:00')
+, ('Series End', 1, 2, 3,1,1000, '2016-05-16 12:00:00')
 
-
---select Home,t2.TeamName as Away,TotalPoints,Spectators ,GameDate from 
---	(select
---		  t1.TeamName as Home
---		, AwayTeamId as w
---		, (HomePoints+ AwayPoints) as TotalPoints 
---		, Spectators 
---		, GameDate
---	from Games
---	inner join 
---		Teams t1 on TeamId = HomeTeamId ) p
---inner join Teams t2 on TeamId = w
-
---select  t1.TeamName as Home, t2.TeamName as Away, (g.HomePoints+g.AwayPoints),g.Spectators from games g
---left join teams t1 on g.HomeTeamId = t1.TeamId
---left join teams t2 on g.AwayTeamId = t2.TeamId

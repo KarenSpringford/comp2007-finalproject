@@ -134,3 +134,12 @@ C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-fina
 \\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\bin\EntityFramework.xml
 \\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\bin\EntityFramework.SqlServer.xml
 \\vmware-host\Shared Folders\Desktop\finalAssignment\comp2007-finalproject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.Owin.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Owin.dll
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.Owin.xml
+C:\Users\Aristotle Rovithis\Desktop\comp2007\comp2007-finalproject\comp2007-finalproject\bin\Microsoft.Owin.Host.SystemWeb.xml

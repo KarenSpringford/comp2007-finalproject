@@ -34,7 +34,7 @@
                 </asp:PlaceHolder>
                 <%-- DodgeBallPlaceHolder is for users that areregistered and logged in --%>
                 <asp:PlaceHolder ID="DodgeBallPlaceHolder" runat="server" >
-                    <li id="dodgeballmenu" runat="server"><a href="/DodgeBall/AdminMenu.aspx"><i class="fa fa-tachometer fa-lg"> Menu</i></a></li>
+                    <li id="dodgeballmenu" runat="server"><a href="/DodgeBall/DodgeballMenu.aspx"><i class="fa fa-tachometer fa-lg"> Menu</i></a></li>
                     <li id="teams" runat="server"><a href="/DodgeBall/Teams.aspx"><i class="fa fa-star-o fa-lg" aria-hidden="true"></i> Teams</a></li>
                     <li id="games" runat="server"><a href="/DodgeBall/Games.aspx"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i> Games</a></li>
                     <li id="logout" runat="server"><a href="/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>

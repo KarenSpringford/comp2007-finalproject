@@ -36,5 +36,10 @@ namespace comp2007_finalproject
         {
 
         }
+
+        protected void LoginButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
