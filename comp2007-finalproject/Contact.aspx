@@ -10,7 +10,7 @@
  */ 
 --%>
 <%@ Page Title="Contact" Language="C#" MasterPageFile="~/Public.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="comp2007_finalproject.Contact" %>
-
+<%--  invis --%>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
