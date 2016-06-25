@@ -26,6 +26,8 @@ h1 {
 body {
     background: linear-gradient(to right,rgb(204, 230, 255 ),rgb(51, 153, 255));
     font-family: Arial, Helvetica, sans-serif;
+    background: url("/Assets/dogeball.jpeg") no-repeat right fixed;
+     background-size:inherit;
 }
 
 /*also not sure what this does 2016.06.15*/
