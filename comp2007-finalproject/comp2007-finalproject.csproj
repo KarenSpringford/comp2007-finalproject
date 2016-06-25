@@ -104,6 +104,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\UserDetails.aspx" />
+    <Content Include="Admin\Users.aspx" />
     <Content Include="Assets\logo-smaller.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\app.css" />
@@ -116,7 +118,8 @@
     <Content Include="axr-test.sql" />
     <Content Include="Default.aspx" />
     <Content Include="Documentation.aspx" />
-    <Content Include="DodgeBall\AdminMenu.aspx" />
+    <Content Include="Admin\AdminMenu.aspx" />
+    <Content Include="DodgeBall\DogdeballMenu.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="DodgeBall\GameDetails.aspx" />
@@ -177,6 +180,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,12 +215,19 @@
     <Compile Include="Documentation.aspx.designer.cs">
       <DependentUpon>Documentation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DodgeBall\AdminMenu.aspx.cs">
+    <Compile Include="Admin\AdminMenu.aspx.cs">
       <DependentUpon>AdminMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DodgeBall\AdminMenu.aspx.designer.cs">
+    <Compile Include="Admin\AdminMenu.aspx.designer.cs">
       <DependentUpon>AdminMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DodgeBall\DogdeballMenu.aspx.cs">
+      <DependentUpon>DogdeballMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DodgeBall\DogdeballMenu.aspx.designer.cs">
+      <DependentUpon>DogdeballMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="DodgeBall\GameDetails.aspx.cs">
       <DependentUpon>GameDetails.aspx</DependentUpon>
@@ -305,7 +329,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>

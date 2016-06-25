@@ -1,9 +1,12 @@
 ﻿/**
- * @file Navbar.ascx.cs
- * @author Aristotle Rovithis & Karen Springford
- * @version 0.0.2
- * @desc Logic for the Navbar UserControl
- */
+* @file Navbar.ascx.cs
+* @author Aristotle Rovithis 200209736
+* @author Karen Springford 200299681
+* @modified 2016.06.21
+* @version 0.0.1 Page created
+* @history 
+* @desc Logic for the Global Navbar
+*/
 using System;
 using System.Collections.Generic;
 using System.Linq;
