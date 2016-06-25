@@ -32,7 +32,24 @@ namespace comp2007_finalproject
          */
 		protected void Page_Load(object sender, EventArgs e)
         {
-            addActiveClass();
+            if (!IsPostBack)
+            {
+                //check to see if the user is logged in
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    //show the DodgeBall Context area
+                    DodgeBallPlaceholder.Visible = true;
+                    PublicPlaceholder.Visible = false;
+                }
+                else
+                {
+                    //only show login and register
+                    DodgeBallPlaceholder.Visible = false;
+                    PublicPlaceholder.Visible = true;
+                }
+
+                addActiveClass();
+            }
         }
 
         /**
