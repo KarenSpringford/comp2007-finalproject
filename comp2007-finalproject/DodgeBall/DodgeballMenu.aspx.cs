@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace comp2007_finalproject.DodgeBall
 {
-    public partial class DogdeballMenu : System.Web.UI.Page
+    public partial class DodgeballMenu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

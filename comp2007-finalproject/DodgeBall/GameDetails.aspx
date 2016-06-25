@@ -1,6 +1,6 @@
 ﻿<%--
 /**
- * @file 
+ * @file GameDetails.aspx
  * @author Aristotle Rovithis 200209736
  * @author Karen Springford 200299681
  * @modified 2016.06.21

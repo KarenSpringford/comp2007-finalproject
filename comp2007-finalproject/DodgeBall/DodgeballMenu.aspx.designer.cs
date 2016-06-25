@@ -11,7 +11,7 @@ namespace comp2007_finalproject.DodgeBall
 {
 
 
-    public partial class DogdeballMenu
+    public partial class DodgeballMenu
     {
     }
 }
